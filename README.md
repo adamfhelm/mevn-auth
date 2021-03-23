@@ -1,5 +1,5 @@
 # mevn-auth
-Stand Alone Authentication Module for applications leveraging MongoDB, Express.js, Vue.js, and Node.js.
+Stand Alone Authentication Module for applications leveraging MongoDB, Express.js, Vue.js, and Node.js. Mongo Vue Authentication.
 
 ## Requirements More Notes To Follow
 
