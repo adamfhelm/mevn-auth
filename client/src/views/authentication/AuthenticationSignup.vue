@@ -22,7 +22,7 @@
 </template>
 <script>
 import AuthSignupForm from "@/components/authentication/core/AuthenticationSignupForm.vue";
-import { createLogin } from "@/store/auth/actions";
+import { SET_AUTH } from "@/store/auth/actions";
 export default {
   name: "authSignup",
   components: {
@@ -45,7 +45,7 @@ export default {
         // while the login creation is doing its thing set the state to loading.
         this.loading = true
         // dispatch createLogin method from the vuex store.
-        this.$store.dispatch(createLogin, this.login).then(response => {
+        this.$store.dispatch(SET_AUTH, this.login).then(response => {
         // use auth mixin in @mixins and registered globally to save response to local storage and make the
         // SET_AUTH mutation in vuex
         // this.$store.state.auth.username = response.data.username
